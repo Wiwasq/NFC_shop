@@ -1,0 +1,90 @@
+:root {
+  --azul: #1A73E8;
+  --fondo: #F3F6FF;
+  --gris: #666;
+}
+
+.codigo-wrapper {
+  background: var(--fondo);
+  min-height: 100vh;
+  font-family: Arial;
+}
+
+/* Top Bar */
+.codigo-topbar {
+  background: var(--azul);
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Card */
+.codigo-card {
+  max-width: 480px;
+  margin: 50px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.codigo-emoji {
+  font-size: 80px;
+}
+
+.codigo-title {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.codigo-sub {
+  margin-top: 10px;
+  color: var(--gris);
+  font-size: 15px;
+}
+
+/* Input */
+.codigo-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  margin-top: 25px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Botones */
+.codigo-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cancelar {
+  background: #777;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.btn-continuar {
+  background: var(--azul);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,10 @@
+# --- Dependencias principales del proyecto (Frontend React) ---
+react==18.3.1
+react-dom==18.3.1
+react-router-dom==6.28.0
+vite==5.2.0
+
+# --- Dependencias de desarrollo ---
+@vitejs/plugin-react==4.3.1
+
+# --- No requiere backend ni librerías adicionales ---

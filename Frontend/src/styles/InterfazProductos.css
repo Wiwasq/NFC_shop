@@ -1,0 +1,189 @@
+:root {
+  --azul-principal: #1A73E8;
+  --azul-oscuro: #0d59c4;
+  --fondo: #F3F6FF;
+  --gris-texto: #666;
+  --gris-suave: #D9DDE8;
+  --verde: #12A54F;
+}
+
+/* Fondo general */
+.productos-wrapper {
+  background: var(--fondo);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.productos-topbar {
+  background: var(--azul-principal);
+  color: white;
+  padding: 18px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Buscador */
+.productos-buscador {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.buscador-input,
+.buscador-categorias {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+}
+
+.buscador-input {
+  flex: 1;
+}
+
+/* GRID */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding: 15px;
+}
+
+/* TARJETAS */
+.producto-card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.12);
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Icono emoji */
+.producto-icon {
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Info del producto */
+.producto-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.producto-marca {
+  color: var(--gris-texto);
+  margin: 4px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.producto-descripcion {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0 10px 0;
+}
+
+/* Información extra */
+.producto-extra {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.categoria {
+  background: var(--gris-suave);
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Precio */
+.producto-precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--azul-principal);
+  margin: 5px 0;
+}
+
+/* Botón Añadir */
+.producto-btn {
+  background: var(--azul-principal);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.producto-btn:hover {
+  background: var(--azul-oscuro);
+}
+
+/* Botón ir a caja */
+.btn-ir-caja {
+  width: 92%;
+  margin: 20px auto;
+  display: block;
+  background: var(--verde);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-ir-caja:hover {
+  opacity: 0.9;
+}
+
+/* Botón volver */
+.btn-volver {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  width: 110px;
+  height: 45px;
+  border-radius: 10px;
+  background: #555;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+/* SNACKBAR */
+.snackbar {
+  visibility: hidden;
+  background: #323232;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  border-radius: 12px;
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.snackbar.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
