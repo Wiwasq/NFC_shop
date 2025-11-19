@@ -27,4 +27,4 @@ Incluye pantallas completas de:
 
 Importante:
 - EXTRAER EL RAR NODE MODULES EN FRONTEND ANTES DE EJECUTAR EL CÓDIGO
-Ejecutar el frontend poniendo en el cmd npm run dev y instalar los requrimientos
+Ejecutar el frontend poniendo en el cmd npm run dev y instalar los requerimientos
