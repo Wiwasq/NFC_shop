@@ -24,3 +24,6 @@ Incluye pantallas completas de:
 - **CSS Modules / Archivos CSS separados**
 - **Emojis como íconos de productos**  
 - Estilo visual moderno tipo **aplicación móvil**
+
+Importante:
+- EXTRAER EL RAR NODE MODULES EN FRONTEND ANTES DE EJECUTAR EL CÓDIGO
